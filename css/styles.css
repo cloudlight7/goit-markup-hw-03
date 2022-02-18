@@ -159,6 +159,10 @@ ul, ol{
     padding: 0;
     text-align: left;
 }
+.feature-item{
+    width: 270px;
+
+}
 .feature-item:not(:last-child){
     margin-right: 30px;
 }
