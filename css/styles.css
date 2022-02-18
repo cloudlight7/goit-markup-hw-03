@@ -24,6 +24,9 @@ ul, ol{
     list-style-type: none;
     margin: 0;
 }
+img{
+    display: block;
+}
 .text{
     color:var(--secondary-text-color);
 }
@@ -49,7 +52,7 @@ ul, ol{
 
         /* Шапка сайта */
 .header{
-    border: 1px solid var(--line-border-color);
+    border-bottom: 1px solid var(--line-border-color);
 }
 .header-container{
     display: flex;
@@ -98,7 +101,7 @@ ul, ol{
 }
 
 .contact{
-    margin-left: 331px;
+    margin-left: auto;
 }
 .nav-contact{
     display: inline-block;
@@ -117,13 +120,15 @@ ul, ol{
 
         /* Герой */
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--hero-footer-bg-color);
     color: var(--primary-white-color);
     text-align: center;
 }
 
 .hero-title{
-    padding-top: 205px;
+ 
     margin: 0 0 30px 0;
 
     font-weight: 900;
@@ -136,7 +141,7 @@ ul, ol{
 .hero-button{
     display: inline-block;
     min-width: 200px;
-    margin-bottom: 195px;
+
     padding: 10px 32px;
     letter-spacing: 0.06em;
     border-radius: 4px;
@@ -167,7 +172,9 @@ ul, ol{
     margin-right: 30px;
 }
 .feature h2{
-    display: none;
+    margin: 0;
+    /* display: none; */
+    visibility: hidden;
 }
  .feature-title{
      margin: 0 0 10px 0;
@@ -217,13 +224,17 @@ ul, ol{
 .team-item:not(:last-child){
     margin-right: 30px;
 }
+.card-team{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-text{
-    margin: 0 0 30px 0;
+    margin: 0;
     line-height: 1.18;
 }
 .team-caption{
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+   /*  margin-bottom: 10px; */
 
     font-weight: 500;
     font-size: 16px;
@@ -231,12 +242,14 @@ ul, ol{
 }
         /* Подвал */
 .footer{
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: var(--hero-footer-bg-color); 
     
 }
 .footer-logo{
     display: inline-block;
-    padding-top: 60px;
+
     margin-bottom: 20px;
 
     color: var(--primary-white-color);
@@ -250,7 +263,7 @@ ul, ol{
 
 }
 .address{
-    padding-bottom: 60px;
+    
 }
 .footer-text{
     margin: 0 0 9px 0;
@@ -330,9 +343,9 @@ ul, ol{
 .portfolio-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
-.filter-link img{
+/* .filter-link img{
     display: block;
-}
+} */
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
   }
