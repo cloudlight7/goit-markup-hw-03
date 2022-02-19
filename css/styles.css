@@ -171,10 +171,18 @@ img{
 .feature-item:not(:last-child){
     margin-right: 30px;
 }
-.feature h2{
-    margin: 0;
-    /* display: none; */
-    visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
  .feature-title{
      margin: 0 0 10px 0;
@@ -234,7 +242,6 @@ img{
 }
 .team-caption{
     margin: 0 0 10px 0;
-   /*  margin-bottom: 10px; */
 
     font-weight: 500;
     font-size: 16px;
@@ -288,11 +295,6 @@ img{
 }
 /* Страница Портфолио */
 
-.portfolio-page{
-}
-.portfolio-page .container > h1{
-    display: none;
-}
 .filter-list{
     margin-bottom: 50px;
     display: flex;
